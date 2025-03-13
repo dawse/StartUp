@@ -9,9 +9,8 @@ export const metadata: Metadata = {
 
 const ECommerceBlog = async () => {
   const blogProps = {
-    // public\images\e-commerce\e-commerce-01.jpg
     mainImage: {
-      src: "/images/e-commerce/e-commerce-01.jpg", // Placeholder image; update as needed
+      src: "/images/e-commerce/e-commerce-01.jpg", 
       alt: "Solution e-commerce performante et moderne",
       aspect: "97/60",
     },
@@ -37,6 +36,23 @@ const ECommerceBlog = async () => {
         "Opter pour notre service, c'est investir dans une solution pérenne et innovante. Nous mettons à votre disposition notre savoir-faire technique et notre passion pour le digital afin de transformer votre vision en une boutique en ligne à succès. Contactez-nous dès aujourd'hui pour découvrir comment nous pouvons vous aider à atteindre vos objectifs commerciaux.",
       ],
     },
+    relatedPosts: [
+      {
+        title: "Site vitrine",
+        mainImage: "/images/siteVitrine/website.jpg",
+        link: "/service/site-vitine",
+      },
+      {
+        title: "Maintenance et mise à jour",
+        mainImage: "/images/maintenance/maintenance-site-web-01.jpg",
+        link: "/service/maintenance",
+      },
+      {
+        title: "Marketing digital",
+        mainImage: "/images/marketing/marketing-01.jpg",
+        link: "/service/marketing-digital",
+      },
+    ],
   };
 
   return <BlogPostLayout {...blogProps} />;

@@ -14,27 +14,37 @@ export interface RelatedPostProps {
 
 const RelatedPost = ({ posts }: RelatedPostProps) => {
   return (
-    <div className="animate_top rounded-md border border-stroke bg-white p-9 shadow-solid-13 dark:border-strokedark dark:bg-blacksection">
-      <h4 className="mb-7.5 text-2xl font-semibold text-black dark:text-white">
-        Related Posts
+    <div className="rounded-md border border-stroke bg-white p-6 shadow-sm dark:border-strokedark dark:bg-blacksection">
+      <h4 className="mb-5 text-lg font-semibold text-black dark:text-white">
+      Découvrez aussi nos autres services
       </h4>
 
       <div>
         {posts.length > 0 ? (
           posts.map((post, index) => (
             <div
-              className="mb-7.5 flex flex-wrap gap-4 xl:flex-nowrap 2xl:gap-6"
+              className="mb-4 flex items-center gap-3 border-b border-gray-200 pb-3 last:border-b-0 dark:border-gray-700"
               key={index}
             >
-              <div className="max-w-45 relative h-18 w-45">
+              <div className="relative h-12 w-12 overflow-hidden rounded-md border border-gray-300 dark:border-gray-700">
                 {post.mainImage ? (
-                  <Image fill src={post.mainImage} alt={post.title} />
+                  <Image
+                    fill
+                    className="object-cover"
+                    src={post.mainImage}
+                    alt={post.title}
+                  />
                 ) : (
-                  "No image"
+                  <div className="flex h-full w-full items-center justify-center bg-gray-100 text-gray-500">
+                    No image
+                  </div>
                 )}
               </div>
-              <h5 className="text-md font-medium text-black transition-all duration-300 hover:text-primary dark:text-white dark:hover:text-primary">
-                <Link href={post.link}>
+              <h5 className="text-sm font-medium text-black dark:text-white">
+                <Link
+                  href={post.link}
+                  className="hover:underline dark:hover:text-primary"
+                >
                   {post.title.length > 40
                     ? post.title.slice(0, 40) + "..."
                     : post.title}
@@ -43,7 +53,9 @@ const RelatedPost = ({ posts }: RelatedPostProps) => {
             </div>
           ))
         ) : (
-          <p>No related posts available.</p>
+          <p className="text-gray-500 dark:text-gray-400">
+            No related posts available.
+          </p>
         )}
       </div>
     </div>

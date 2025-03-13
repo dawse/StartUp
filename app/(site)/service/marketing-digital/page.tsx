@@ -36,6 +36,23 @@ const MarketingDigitalBlog = async () => {
         "En choisissant notre service de marketing digital, vous investissez dans un partenariat stratégique qui vous accompagne à chaque étape, de la conception à l'exécution, pour assurer le succès de votre entreprise dans l'univers digital.",
       ],
     },
+    relatedPosts: [
+      {
+        title: "Site vitrine",
+        mainImage: "/images/siteVitrine/website.jpg",
+        link: "/service/site-vitine",
+      },
+      {
+        title: "E-commerce",
+        mainImage: "/images/e-commerce/e-commerce-01.jpg",
+        link: "/service/e-commerce",
+      },
+      {
+        title: "Maintenance et mise à jour",
+        mainImage: "/images/maintenance/maintenance-site-web-01.jpg",
+        link: "/service/maintenance",
+      },
+    ],
   };
 
   return <BlogPostLayout {...blogProps} />;

@@ -35,6 +35,23 @@ const MaintenanceBlog = async () => {
         "En choisissant notre service, vous bénéficiez d’une expertise technique avancée et d’un accompagnement personnalisé pour anticiper et résoudre rapidement tout problème. Contactez-nous dès aujourd’hui pour discuter de vos besoins et assurer la pérennité de votre site web.",
       ],
     },
+    relatedPosts: [
+      {
+        title: "Site vitrine",
+        mainImage: "/images/siteVitrine/website.jpg",
+        link: "/service/site-vitine",
+      },
+      {
+        title: "E-commerce",
+        mainImage: "/images/e-commerce/e-commerce-01.jpg",
+        link: "/service/e-commerce",
+      },
+      {
+        title: "Marketing digital",
+        mainImage: "/images/marketing/marketing-01.jpg",
+        link: "/service/marketing-digital",
+      },
+    ],
   };
 
   return <BlogPostLayout {...blogProps} />;

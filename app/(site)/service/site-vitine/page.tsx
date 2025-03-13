@@ -38,19 +38,19 @@ const SiteVitrineBlog = async () => {
     },
     relatedPosts: [
       {
-        title: "Comment créer un site vitrine efficace ?",
-        mainImage: "/images/related/related1.jpg",
-        link: "/blog/create-site-vitrine",
+        title: "E-commerce",
+        mainImage: "/images/e-commerce/e-commerce-01.jpg",
+        link: "/service/e-commerce",
       },
       {
-        title: "Les meilleures pratiques du design web",
-        mainImage: "/images/related/related2.jpg",
-        link: "/blog/design-practices",
+        title: "Maintenance et mise à jour",
+        mainImage: "/images/maintenance/maintenance-site-web-01.jpg",
+        link: "/service/maintenance",
       },
       {
-        title: "Optimisez votre SEO pour booster votre présence en ligne",
-        mainImage: "/images/related/related3.jpg",
-        link: "/blog/seo-tips",
+        title: "Marketing digital",
+        mainImage: "/images/marketing/marketing-01.jpg",
+        link: "/service/marketing-digital",
       },
     ],
   };
