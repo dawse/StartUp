@@ -9,6 +9,7 @@ import Pricing from "@/components/Pricing";
 import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
+import { Toaster } from "react-hot-toast";
 
 
 export const metadata: Metadata = {
