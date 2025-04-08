@@ -1,14 +1,8 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import Link from "next/link";
 
 const Hero = () => {
-  const [email, setEmail] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
-
   return (
     <>
       <section className="overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
@@ -31,16 +25,15 @@ const Hero = () => {
               </p>
 
               <div className="mt-10">
-                <form onSubmit={handleSubmit}>
                   <div className="flex flex-wrap gap-5">
-                    <button
+                    <Link
+                      href="/support"
                       aria-label="get started button"
                       className="flex rounded-full bg-black px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
                     >
                       Besoin d'un coup de main ?
-                    </button>
+                    </Link>
                   </div>
-                </form>
               </div>
             </div>
 

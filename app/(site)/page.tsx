@@ -9,14 +9,11 @@ import Pricing from "@/components/Pricing";
 import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
-import { Toaster } from "react-hot-toast";
 
 
 export const metadata: Metadata = {
-  title: "Biba",
-
-  // other metadata
-  description: "This is Home for Solid Pro"
+  title: "B2F Build To Future",
+  icons:"https://www.shutterstock.com/image-vector/six-knife-hexagon-simple-symbol-260nw-2080553740.jpg"
 };
 
 export default function Home() {

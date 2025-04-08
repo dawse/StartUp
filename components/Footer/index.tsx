@@ -300,9 +300,6 @@ const Footer = () => {
               viewport={{ once: true }}
               className="animate_top"
             >
-              <p>
-                &copy; {new Date().getFullYear()} Solid. All rights reserved
-              </p>
             </motion.div>
 
             <motion.div

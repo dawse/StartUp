@@ -103,13 +103,14 @@ const Pricing = () => {
                   </ul>
                 </div>
 
-                <button
+                {/* <button
                   aria-label="Obtenir l'offre"
                   className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
                 >
-                  <span className="duration-300 group-hover/btn:pr-2">
+                   <span className="duration-300 group-hover/btn:pr-2">
                     Obtenir l'Offre
-                  </span>
+                   </span> 
+        
                   <svg
                     width="14"
                     height="14"
@@ -121,7 +122,9 @@ const Pricing = () => {
                       fill="currentColor"
                     />
                   </svg>
-                </button>
+                </button> 
+                TODO! 
+                */}
               </div>
             ))}
           </div>
